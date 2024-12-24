@@ -1,31 +1,33 @@
 {
-  "name": "react-native-starter",
-  "version": "1.0.0",
-  "private": true,
+  "name": "restate-app",
   "main": "expo-router/entry",
+  "private": true,
+  "version": "1.0.0",
   "scripts": {
     "start": "expo start",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
+    "reset-project": "node ./scripts/reset-project.js",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
     "web": "expo start --web",
-    "type-check": "tsc --project tsconfig.json --pretty --noEmit",
-    "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx|json|md)\" --write",
-    "lint": "eslint --fix",
     "test:ci": "jest",
     "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage",
+    "type-check": "tsc --project tsconfig.json --pretty --noEmit",
+    "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx|json|md)\" --write",
+    "lint": "eslint --fix",
     "prepare": "husky"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
+    "@react-navigation/bottom-tabs": "^7.2.0",
     "@react-navigation/native": "^7.0.14",
-    "expo": "~52.0.21",
+    "expo": "~52.0.23",
     "expo-blur": "~14.0.1",
     "expo-constants": "~17.0.3",
     "expo-font": "~13.0.2",
     "expo-haptics": "~14.0.0",
     "expo-linking": "~7.0.3",
-    "expo-router": "~4.0.14",
+    "expo-router": "~4.0.15",
     "expo-splash-screen": "~0.29.18",
     "expo-status-bar": "~2.0.0",
     "expo-symbols": "~0.2.0",
@@ -34,15 +36,15 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-native": "0.76.5",
-    "react-native-gesture-handler": "~2.21.2",
-    "react-native-reanimated": "~3.16.5",
-    "react-native-safe-area-context": "5.0.0",
-    "react-native-screens": "4.3.0",
-    "react-native-web": "~0.19.10",
+    "react-native-gesture-handler": "~2.20.2",
+    "react-native-reanimated": "~3.16.1",
+    "react-native-safe-area-context": "4.12.0",
+    "react-native-screens": "~4.4.0",
+    "react-native-web": "~0.19.13",
     "react-native-webview": "13.12.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0",
+    "@babel/core": "^7.25.2",
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
     "@eslint/js": "^9.17.0",
@@ -53,8 +55,8 @@
     "@testing-library/react-native": "^12.9.0",
     "@testing-library/user-event": "^14.5.2",
     "@types/jest": "^29.5.12",
-    "@types/react": "~19.0.2",
-    "@types/react-test-renderer": "^19.0.0",
+    "@types/react": "~18.3.12",
+    "@types/react-test-renderer": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^8.18.1",
     "@typescript-eslint/parser": "^8.18.1",
     "commitizen": "^4.3.0",
@@ -82,9 +84,9 @@
     "jest-expo": "~52.0.2",
     "lint-staged": "^15.2.11",
     "prettier": "^3.4.2",
-    "react-test-renderer": "19.0.0",
+    "react-test-renderer": "18.3.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.2",
+    "typescript": "^5.3.3",
     "typescript-eslint": "^8.18.1"
   },
   "husky": {
@@ -97,9 +99,5 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "engines": {
-    "node": ">=23.1.0",
-    "pnpm": ">=9.15.0"
-  },
-  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c"
+  "packageManager": "pnpm@9.15.1+sha512.1acb565e6193efbebda772702950469150cf12bcc764262e7587e71d19dc98a423dff9536e57ea44c49bdf790ff694e83c27be5faa23d67e0c033b583be4bfcf"
 }
